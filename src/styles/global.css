@@ -3,8 +3,15 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-
 :root {
+/* Primary Colors */
+--sage-green: #8B9D77;
+--warm-beige: #D9C5AD; 
+--soft-white: #F0EDE5;
+
+/* Accent Colors */
+--deep-brown: #5B4D41;
+--terracotta: #BC7F5C;
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -16,25 +23,39 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
+	font-family: 'Lora';
+	src: url('/fonts/Lora-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inconsolata-Bold';
+	src: url('/fonts/Inconsolata-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inconsolata-Regular';
+	src: url('/fonts/Inconsolata-Regular.ttf') format('truetype');
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Inconsolata-Regular', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background: var(--soft-white);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -57,6 +78,7 @@ h6 {
 	margin: 0 0 0.5rem 0;
 	color: rgb(var(--black));
 	line-height: 1.2;
+	font-family: 'Inconsolata-Bold', 'Arial'
 }
 h1 {
 	font-size: 3.052em;
@@ -78,16 +100,16 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--deep-brown);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--deep-brown);
 }
 p {
 	margin-bottom: 1em;
 }
 .prose p {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 textarea {
 	width: 100%;
